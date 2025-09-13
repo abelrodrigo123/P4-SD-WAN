@@ -29,7 +29,7 @@ La topología diseñada está compuesta por cuatro nodos virtuales: dos hosts fi
 Cada switch dispone de dos interfaces de datos (eth1 y eth2) y una interfaz adicional de gestión (eth3), utilizada para la comunicación con el controlador a través de la red de gestión (172.17.2.0/24)
 
 
-![Diseño](Imagenes\DiseñoL2.drawio180.png)
+![Diseño](Imagenes/DiseñoL2.drawio180.png)
 
 ---
 
@@ -103,7 +103,7 @@ sudo vnx --clean-host
 ibdn@ibdn-VirtualBox:~/TFG_P4-main/TFG_P4-main$ sudo vnx -f p4_vnx.xml -v --show-map 
 ```
 
-![Topologia](Imagenes\Topologia.png)
+![Topologia](Imagenes/Topologia.png)
 
 
 ## Compilación del programa P4

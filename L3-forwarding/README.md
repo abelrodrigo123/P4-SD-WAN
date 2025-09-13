@@ -3,8 +3,6 @@
   <img src="Imagenes/LogoUPM.png"  width="220" height="100"
 </p>
 
-![alt text](Imagenes/LogoUPM.png)
-![alt text](../imagenes/LogoUPM.png)
 
 # ESCENARIO DE CAPA 3 con P4 y BMv2 en VNX
 
