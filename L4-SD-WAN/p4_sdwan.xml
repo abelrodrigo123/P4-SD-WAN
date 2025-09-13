@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+~~~~~~~~~~~~~~~~~~~~
+VNX Sample scenarios
+~~~~~~~~~~~~~~~~~~~~
+
+Name:        P4_VNX
+Description: As simple tutorial scenario made of 4 LXC Ubuntu virtual machines
+             2 hosts: h1, h2; 
+             2 P4 switches: s1, s2
+             controller needs to run in localhost (P4C)
+
+This file is part of the Virtual Networks over LinuX (VNX) Project distribution. 
+(www: http://www.dit.upm.es/vnx - e-mail: vnx@dit.upm.es) 
+
+Departamento de Ingenieria de Sistemas Telematicos (DIT)
+Universidad Politecnica de Madrid
+SPAIN
+
+-->
+
+<vnx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="/usr/share/xml/vnx/vnx-2.00.xsd">
+  <global>
+    <version>2.0</version>
+    <scenario_name>P4_SDWAN</scenario_name>
+    <automac/>
+    <vm_mgmt type="none" />
+    <!--vm_mgmt type="private" network="10.250.0.0" mask="24" offset="200">
+       <host_mapping />
+    </vm_mgmt-->
+    <vm_defaults>
+        <console id="0" display="no"/>
+        <console id="1" display="yes"/>
+    </vm_defaults>
+
+    <!-- <vnx_cfg>p4_lxc_ubuntu64.cvnx</vnx_cfg> -->
+
+  </global>
+
+  <net name="Net0" mode="virtual_bridge" /> <!-- This is the network for the controller -->
+  <net name="Net1" mode="virtual_bridge" /> <!-- This is the network for h1 and s1 -->
+  <net name="Net2" mode="virtual_bridge" /> <!-- This is the network for the P4 switches s1 to s2 (Internet) -->
+  <net name="Net3" mode="virtual_bridge" /> <!-- This is the network for h2 and s2 -->
+  <net name="Net4" mode="virtual_bridge" /> <!-- This is the network for the P4 switches s1 to s2 (MLPS) -->
+
+  <vm name="h1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net1">
+      <ipv4>10.0.0.1/24</ipv4>          
+    </if>
+    <exec seq="on_boot" type="verbatim" ostype="system"> arp -s 10.0.0.2 02:fd:00:00:01:01</exec>
+    
+  </vm>
+
+  <vm name="h2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3">
+      <ipv4>10.0.0.2/24</ipv4>      
+    </if>
+    <exec seq="on_boot" type="verbatim" ostype="system"> arp -s 10.0.0.1 02:fd:00:00:00:01</exec>
+    
+  </vm>
+
+  <vm name="s1" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net1"> <!-- eth1 to s1 -->
+      
+    </if>
+    <if id="2" net="Net2"> <!-- eth2 to s2 (Internet) -->
+      
+    </if>
+    <if id="3" net="Net0"> <!-- eth3 to controller -->
+      <ipv4>172.17.2.1/24</ipv4>
+    </if>
+    <if id="4" net="Net4"><!-- eth4 to s2 (MPLS) -->
+      
+    </if>
+    <!-- Generar un PATH para ejecutar el switch desde la raiz del sistema -->
+    <filetree seq="on_boot" root="/root/">start_s1.sh</filetree>
+    <exec seq="on_boot" type="verbatim" ostype="system"> 
+      sleep 3
+      export PATH=$PATH:/behavioral-model/targets/simple_switch_grpc/
+      tmux new-session -d -s switch1 simple_switch_grpc --no-p4 \
+        -i 1@eth1 -i 2@eth2 -i 4@eth4 --thrift-port 9090 --device-id 1
+              
+      echo "Switch iniciado" &gt;&gt; /root/start_s1.log;
+    </exec>
+
+    
+        
+  </vm>
+
+  <vm name="s2" type="lxc" arch="x86_64">
+    <filesystem type="cow">/usr/share/vnx/filesystems/rootfs_lxc_ubuntu64</filesystem>
+    <if id="1" net="Net3"> <!-- eth1 to h2 -->
+      
+    </if>
+    <if id="2" net="Net2"> <!-- eth2 to s1 (Internet) -->
+      
+    </if>
+    <if id="3" net="Net0"> <!-- eth3 to controller -->
+      <ipv4>172.17.2.2/24</ipv4>
+    </if>
+    <if id="4" net="Net4">  <!-- eth4 to s1 (MPLS) -->
+      
+    </if>
+    <filetree seq="on_boot" root="/root/"> start_s2.sh </filetree>
+    <exec seq="ss2" type="verbatim" ostype="system">/root/start_s2.sh </exec>
+    
+    <exec seq="on_boot" type="verbatim" ostype="system"> 
+      sleep 3
+      export PATH=$PATH:/behavioral-model/targets/simple_switch_grpc/
+      tmux new-session -d -s switch2 simple_switch_grpc --no-p4 \
+        -i 1@eth1 -i 2@eth2 -i 4@eth4 --thrift-port 9091 --device-id 2
+              
+      echo "Switch iniciado" &gt;&gt; /root/start_s2.log;
+    </exec>               
+  </vm>
+  <host>
+    <hostif net="Net0">
+      <ipv4>172.17.2.100/24</ipv4>
+      
+    </hostif>
+  </host>
+</vnx>

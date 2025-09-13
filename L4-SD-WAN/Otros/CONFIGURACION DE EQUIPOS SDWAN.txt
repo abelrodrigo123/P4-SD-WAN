@@ -1,0 +1,200 @@
+CONFIGURACION DE EQUIPOS SDWAN
+
+root@h1:~# ip -br link
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+eth1@if24        UP             02:fd:00:00:00:01 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+root@h1:~# 
+
+root@h1:~# ifconfig 
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.0.1  netmask 255.255.255.0  broadcast 10.0.0.255
+        inet6 fe80::fd:ff:fe00:1  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:00:01  txqueuelen 1000  (Ethernet)
+        RX packets 90  bytes 11986 (11.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@h1:~# 
+
+
+
+
+
+
+root@h2:~# ifconfig
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.1.0.2  netmask 255.255.255.0  broadcast 10.1.0.255
+        inet6 fe80::fd:ff:fe00:101  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:01:01  txqueuelen 1000  (Ethernet)
+        RX packets 90  bytes 11986 (11.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@h2:~# 
+
+
+
+
+
+root@s1:~# ip -br link
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+eth1@if26        UP             02:fd:00:00:02:01 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth2@if27        UP             02:fd:00:00:02:02 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth3@if28        UP             02:fd:00:00:02:03 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth4@if29        UP             02:fd:00:00:02:04 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+
+
+root@s1:~# ifconfig
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.0.254  netmask 255.255.255.0  broadcast 10.0.0.255
+        inet6 fe80::fd:ff:fe00:201  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:02:01  txqueuelen 1000  (Ethernet)
+        RX packets 77  bytes 10691 (10.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 202.0.0.1  netmask 255.255.255.0  broadcast 202.0.0.255
+        inet6 fe80::fd:ff:fe00:202  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:02:02  txqueuelen 1000  (Ethernet)
+        RX packets 90  bytes 11986 (11.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.17.2.1  netmask 255.255.255.0  broadcast 172.17.2.255
+        inet6 fe80::fd:ff:fe00:203  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:02:03  txqueuelen 1000  (Ethernet)
+        RX packets 111  bytes 15551 (15.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth4: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 204.0.0.1  netmask 255.255.255.0  broadcast 204.0.0.255
+        inet6 fe80::fd:ff:fe00:204  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:02:04  txqueuelen 1000  (Ethernet)
+        RX packets 90  bytes 11986 (11.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@s1:~# 
+
+
+
+
+
+root@s2:~# ip -br link
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+eth1@if30        UP             02:fd:00:00:03:01 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth2@if31        UP             02:fd:00:00:03:02 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth3@if32        UP             02:fd:00:00:03:03 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+eth4@if33        UP             02:fd:00:00:03:04 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+root@s2:~# ifconfig
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.1.0.254  netmask 255.255.255.0  broadcast 10.1.0.255
+        inet6 fe80::fd:ff:fe00:301  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:03:01  txqueuelen 1000  (Ethernet)
+        RX packets 76  bytes 10470 (10.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 202.0.0.2  netmask 255.255.255.0  broadcast 202.0.0.255
+        inet6 fe80::fd:ff:fe00:302  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:03:02  txqueuelen 1000  (Ethernet)
+        RX packets 85  bytes 11504 (11.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.17.2.2  netmask 255.255.255.0  broadcast 172.17.2.255
+        inet6 fe80::fd:ff:fe00:303  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:03:03  txqueuelen 1000  (Ethernet)
+        RX packets 103  bytes 14726 (14.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth4: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 204.0.0.2  netmask 255.255.255.0  broadcast 204.0.0.255
+        inet6 fe80::fd:ff:fe00:304  prefixlen 64  scopeid 0x20<link>
+        ether 02:fd:00:00:03:04  txqueuelen 1000  (Ethernet)
+        RX packets 84  bytes 11414 (11.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1216 (1.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@s2:~# 
+
+
+
+
+
+root@s1:~# lsof -i
+COMMAND   PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r 103 systemd-resolve   13u  IPv4 116374      0t0  UDP localhost:domain 
+systemd-r 103 systemd-resolve   14u  IPv4 116375      0t0  TCP localhost:domain (LISTEN)
+simple_sw 234            root   13u  IPv6 120694      0t0  TCP *:9559 (LISTEN)
+simple_sw 234            root   20u  IPv4 121224      0t0  TCP *:9090 (LISTEN)
+root@s1:~# 
+
+
+
+root@s2:~# lsof -i
+COMMAND   PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd-r 103 systemd-resolve   13u  IPv4 118931      0t0  UDP localhost:domain 
+systemd-r 103 systemd-resolve   14u  IPv4 118932      0t0  TCP localhost:domain (LISTEN)
+simple_sw 234            root   13u  IPv6 120767      0t0  TCP *:9559 (LISTEN)
+simple_sw 234            root   20u  IPv4 121288      0t0  TCP *:9091 (LISTEN)
+root@s2:~# 
+
+
+
+
+
+
+

@@ -1,0 +1,2373 @@
+Calling target program-options parser
+Adding interface s3-eth1 as port 1
+[16:34:14.174] [bmv2] [D] [thread 32616] Adding interface s3-eth1 as port 1
+Adding interface s3-eth2 as port 2
+[16:34:14.194] [bmv2] [D] [thread 32616] Adding interface s3-eth2 as port 2
+Adding interface s3-eth3 as port 3
+[16:34:14.207] [bmv2] [D] [thread 32616] Adding interface s3-eth3 as port 3
+Adding interface s3-eth4 as port 4
+[16:34:14.222] [bmv2] [D] [thread 32616] Adding interface s3-eth4 as port 4
+Server listening on 0.0.0.0:9561
+[16:34:14.236] [bmv2] [I] [thread 32616] Starting Thrift server on port 9092
+[16:34:14.241] [bmv2] [I] [thread 32616] Thrift server was started
+[16:42:29.335] [bmv2] [D] [thread 33449] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[16:42:29.339] [bmv2] [D] [thread 33449] simple_switch target has been notified of a config swap
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Processing packet received on port 1
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Parser 'parser': start
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.342] [bmv2] [T] [thread 33460] [0.0] [cxt 0] Bytes parsed: 14
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Parser 'parser': end
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.342] [bmv2] [T] [thread 33460] [0.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.342] [bmv2] [D] [thread 33460] [0.0] [cxt 0] Egress port is 0
+[16:42:29.342] [bmv2] [D] [thread 33461] [0.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.342] [bmv2] [D] [thread 33461] [0.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.342] [bmv2] [D] [thread 33461] [0.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.342] [bmv2] [T] [thread 33461] [0.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.342] [bmv2] [D] [thread 33461] [0.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.342] [bmv2] [D] [thread 33461] [0.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.342] [bmv2] [D] [thread 33465] [0.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Processing packet received on port 2
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.345] [bmv2] [T] [thread 33460] [1.0] [cxt 0] Bytes parsed: 14
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Parser 'parser': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.345] [bmv2] [T] [thread 33460] [1.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [1.0] [cxt 0] Egress port is 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Processing packet received on port 3
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.345] [bmv2] [T] [thread 33460] [2.0] [cxt 0] Bytes parsed: 14
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Parser 'parser': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.345] [bmv2] [T] [thread 33460] [2.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [2.0] [cxt 0] Egress port is 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Processing packet received on port 4
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.345] [bmv2] [T] [thread 33460] [3.0] [cxt 0] Bytes parsed: 14
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Parser 'parser': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.345] [bmv2] [T] [thread 33460] [3.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [3.0] [cxt 0] Egress port is 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Processing packet received on port 1
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.345] [bmv2] [T] [thread 33460] [4.0] [cxt 0] Bytes parsed: 14
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Parser 'parser': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.345] [bmv2] [T] [thread 33460] [4.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [4.0] [cxt 0] Egress port is 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Processing packet received on port 2
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.345] [bmv2] [T] [thread 33460] [5.0] [cxt 0] Bytes parsed: 14
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Parser 'parser': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.345] [bmv2] [T] [thread 33460] [5.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [5.0] [cxt 0] Egress port is 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Processing packet received on port 3
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.345] [bmv2] [T] [thread 33460] [6.0] [cxt 0] Bytes parsed: 14
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Parser 'parser': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.345] [bmv2] [T] [thread 33460] [6.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [6.0] [cxt 0] Egress port is 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Processing packet received on port 4
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.345] [bmv2] [T] [thread 33460] [7.0] [cxt 0] Bytes parsed: 14
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Parser 'parser': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.345] [bmv2] [T] [thread 33460] [7.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.345] [bmv2] [D] [thread 33460] [7.0] [cxt 0] Egress port is 0
+[16:42:29.345] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Processing packet received on port 1
+[16:42:29.345] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Parser 'parser': start
+[16:42:29.345] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.346] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.346] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.346] [bmv2] [T] [thread 33460] [8.0] [cxt 0] Bytes parsed: 14
+[16:42:29.346] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Parser 'parser': end
+[16:42:29.346] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.346] [bmv2] [T] [thread 33460] [8.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.346] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.346] [bmv2] [D] [thread 33460] [8.0] [cxt 0] Egress port is 0
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Processing packet received on port 2
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Parser 'parser': start
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.346] [bmv2] [T] [thread 33460] [9.0] [cxt 0] Bytes parsed: 14
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Parser 'parser': end
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.346] [bmv2] [T] [thread 33460] [9.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.346] [bmv2] [D] [thread 33460] [9.0] [cxt 0] Egress port is 0
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Processing packet received on port 3
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Parser 'parser': start
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.346] [bmv2] [T] [thread 33460] [10.0] [cxt 0] Bytes parsed: 14
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Parser 'parser': end
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.346] [bmv2] [T] [thread 33460] [10.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.346] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [1.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.348] [bmv2] [D] [thread 33461] [1.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [1.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.348] [bmv2] [T] [thread 33461] [1.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.348] [bmv2] [D] [thread 33461] [1.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.348] [bmv2] [D] [thread 33461] [1.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [2.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.348] [bmv2] [D] [thread 33461] [2.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [2.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.348] [bmv2] [T] [thread 33461] [2.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.348] [bmv2] [D] [thread 33461] [2.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.348] [bmv2] [D] [thread 33461] [2.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [3.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.348] [bmv2] [D] [thread 33461] [3.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [3.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.348] [bmv2] [T] [thread 33461] [3.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.348] [bmv2] [D] [thread 33461] [3.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.348] [bmv2] [D] [thread 33461] [3.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [4.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.348] [bmv2] [D] [thread 33461] [4.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.348] [bmv2] [D] [thread 33461] [4.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.348] [bmv2] [T] [thread 33461] [4.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.349] [bmv2] [D] [thread 33461] [4.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33461] [4.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [5.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.349] [bmv2] [D] [thread 33461] [5.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [5.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.349] [bmv2] [T] [thread 33461] [5.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.349] [bmv2] [D] [thread 33461] [5.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33461] [5.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [6.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.349] [bmv2] [D] [thread 33461] [6.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [6.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.349] [bmv2] [T] [thread 33461] [6.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.349] [bmv2] [D] [thread 33461] [6.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33461] [6.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [7.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.349] [bmv2] [D] [thread 33461] [7.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [7.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.349] [bmv2] [T] [thread 33461] [7.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.349] [bmv2] [D] [thread 33461] [7.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33461] [7.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [8.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.349] [bmv2] [D] [thread 33461] [8.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [8.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.349] [bmv2] [T] [thread 33461] [8.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.349] [bmv2] [D] [thread 33461] [8.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33461] [8.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [9.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.349] [bmv2] [D] [thread 33461] [9.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.349] [bmv2] [D] [thread 33461] [9.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.349] [bmv2] [T] [thread 33461] [9.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.349] [bmv2] [D] [thread 33461] [9.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33461] [9.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [10.0] [cxt 0] Egress port is 0
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Processing packet received on port 4
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Parser 'parser': start
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.349] [bmv2] [T] [thread 33460] [11.0] [cxt 0] Bytes parsed: 14
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Parser 'parser': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.349] [bmv2] [T] [thread 33460] [11.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [11.0] [cxt 0] Egress port is 0
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Processing packet received on port 1
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Parser 'parser': start
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.349] [bmv2] [T] [thread 33460] [12.0] [cxt 0] Bytes parsed: 14
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Parser 'parser': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.349] [bmv2] [T] [thread 33460] [12.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [12.0] [cxt 0] Egress port is 0
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Processing packet received on port 2
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Parser 'parser': start
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.349] [bmv2] [T] [thread 33460] [13.0] [cxt 0] Bytes parsed: 14
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Parser 'parser': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.349] [bmv2] [T] [thread 33460] [13.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [13.0] [cxt 0] Egress port is 0
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Processing packet received on port 3
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Parser 'parser': start
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.349] [bmv2] [T] [thread 33460] [14.0] [cxt 0] Bytes parsed: 14
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Parser 'parser': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.349] [bmv2] [T] [thread 33460] [14.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.349] [bmv2] [D] [thread 33460] [14.0] [cxt 0] Egress port is 0
+[16:42:29.349] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Processing packet received on port 4
+[16:42:29.349] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Parser 'parser': start
+[16:42:29.349] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.349] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.349] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.349] [bmv2] [T] [thread 33460] [15.0] [cxt 0] Bytes parsed: 14
+[16:42:29.349] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Parser 'parser': end
+[16:42:29.350] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.350] [bmv2] [T] [thread 33460] [15.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.350] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.350] [bmv2] [D] [thread 33460] [15.0] [cxt 0] Egress port is 0
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Processing packet received on port 3
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Parser 'parser': start
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.350] [bmv2] [T] [thread 33460] [16.0] [cxt 0] Bytes parsed: 14
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Parser 'parser': end
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.350] [bmv2] [T] [thread 33460] [16.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.350] [bmv2] [D] [thread 33460] [16.0] [cxt 0] Egress port is 0
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Processing packet received on port 4
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Parser 'parser': start
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.350] [bmv2] [T] [thread 33460] [17.0] [cxt 0] Bytes parsed: 14
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Parser 'parser': end
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.350] [bmv2] [T] [thread 33460] [17.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.350] [bmv2] [D] [thread 33460] [17.0] [cxt 0] Egress port is 0
+[16:42:29.350] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Processing packet received on port 3
+[16:42:29.350] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Parser 'parser': start
+[16:42:29.350] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.350] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.350] [bmv2] [T] [thread 33460] [18.0] [cxt 0] Bytes parsed: 14
+[16:42:29.350] [bmv2] [D] [thread 33465] [1.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [2.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [3.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [4.0] [cxt 0] Transmitting packet of size 209 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [5.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [6.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [7.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [8.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [9.0] [cxt 0] Transmitting packet of size 209 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33461] [10.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [10.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [10.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [10.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [10.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [10.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [11.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [11.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [11.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [11.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [11.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [11.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [12.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [12.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [12.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [12.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [12.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [12.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [13.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [13.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [13.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [13.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [13.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [13.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [14.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [14.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [14.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [14.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [14.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [14.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [15.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [15.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [15.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [15.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [15.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [15.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [16.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [16.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [16.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [16.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [16.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [16.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [17.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.350] [bmv2] [D] [thread 33461] [17.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.350] [bmv2] [D] [thread 33461] [17.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.350] [bmv2] [T] [thread 33461] [17.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.350] [bmv2] [D] [thread 33461] [17.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.350] [bmv2] [D] [thread 33461] [17.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.350] [bmv2] [D] [thread 33465] [10.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [11.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [12.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [13.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [14.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [15.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [16.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33465] [17.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[16:42:29.350] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Parser 'parser': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.351] [bmv2] [T] [thread 33460] [18.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.351] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [18.0] [cxt 0] Egress port is 0
+[16:42:29.351] [bmv2] [D] [thread 33461] [18.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.351] [bmv2] [D] [thread 33461] [18.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.351] [bmv2] [D] [thread 33461] [18.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.351] [bmv2] [T] [thread 33461] [18.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.351] [bmv2] [D] [thread 33461] [18.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.351] [bmv2] [D] [thread 33461] [18.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.351] [bmv2] [D] [thread 33465] [18.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Processing packet received on port 4
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Parser 'parser': start
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.351] [bmv2] [T] [thread 33460] [19.0] [cxt 0] Bytes parsed: 14
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Parser 'parser': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.351] [bmv2] [T] [thread 33460] [19.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [19.0] [cxt 0] Egress port is 0
+[16:42:29.351] [bmv2] [D] [thread 33461] [19.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.351] [bmv2] [D] [thread 33461] [19.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.351] [bmv2] [D] [thread 33461] [19.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.351] [bmv2] [T] [thread 33461] [19.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.351] [bmv2] [D] [thread 33461] [19.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.351] [bmv2] [D] [thread 33461] [19.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.351] [bmv2] [D] [thread 33465] [19.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Processing packet received on port 3
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Parser 'parser': start
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.351] [bmv2] [T] [thread 33460] [20.0] [cxt 0] Bytes parsed: 14
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Parser 'parser': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.351] [bmv2] [T] [thread 33460] [20.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [20.0] [cxt 0] Egress port is 0
+[16:42:29.351] [bmv2] [D] [thread 33461] [20.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.351] [bmv2] [D] [thread 33461] [20.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.351] [bmv2] [D] [thread 33461] [20.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.351] [bmv2] [T] [thread 33461] [20.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.351] [bmv2] [D] [thread 33461] [20.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.351] [bmv2] [D] [thread 33461] [20.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.351] [bmv2] [D] [thread 33465] [20.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Processing packet received on port 4
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Parser 'parser': start
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.351] [bmv2] [T] [thread 33460] [21.0] [cxt 0] Bytes parsed: 14
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Parser 'parser': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.351] [bmv2] [T] [thread 33460] [21.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.351] [bmv2] [D] [thread 33460] [21.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Processing packet received on port 3
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [22.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Parser 'parser': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.354] [bmv2] [T] [thread 33460] [22.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [22.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Processing packet received on port 4
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [23.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Parser 'parser': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.354] [bmv2] [T] [thread 33460] [23.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [23.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Processing packet received on port 3
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [24.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Parser 'parser': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.354] [bmv2] [T] [thread 33460] [24.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [24.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Processing packet received on port 4
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [25.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Parser 'parser': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.354] [bmv2] [T] [thread 33460] [25.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [25.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Processing packet received on port 3
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [26.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Parser 'parser': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.354] [bmv2] [T] [thread 33460] [26.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [26.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Processing packet received on port 4
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [27.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Parser 'parser': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.354] [bmv2] [T] [thread 33460] [27.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [27.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Processing packet received on port 3
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [28.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Parser 'parser': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.354] [bmv2] [T] [thread 33460] [28.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.354] [bmv2] [D] [thread 33460] [28.0] [cxt 0] Egress port is 0
+[16:42:29.354] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Processing packet received on port 4
+[16:42:29.354] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Parser 'parser': start
+[16:42:29.354] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.354] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.354] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.354] [bmv2] [T] [thread 33460] [29.0] [cxt 0] Bytes parsed: 14
+[16:42:29.354] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Parser 'parser': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.355] [bmv2] [T] [thread 33460] [29.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.355] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [29.0] [cxt 0] Egress port is 0
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Processing packet received on port 3
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Parser 'parser': start
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.355] [bmv2] [T] [thread 33460] [30.0] [cxt 0] Bytes parsed: 14
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Parser 'parser': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.355] [bmv2] [T] [thread 33460] [30.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [30.0] [cxt 0] Egress port is 0
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Processing packet received on port 4
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Parser 'parser': start
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.355] [bmv2] [T] [thread 33460] [31.0] [cxt 0] Bytes parsed: 14
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Parser 'parser': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.355] [bmv2] [T] [thread 33460] [31.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [31.0] [cxt 0] Egress port is 0
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Processing packet received on port 4
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Parser 'parser': start
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.355] [bmv2] [T] [thread 33460] [32.0] [cxt 0] Bytes parsed: 14
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Parser 'parser': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.355] [bmv2] [T] [thread 33460] [32.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [32.0] [cxt 0] Egress port is 0
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Processing packet received on port 4
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Parser 'parser': start
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Extracting header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Parser state 'start': key is 86dd
+[16:42:29.355] [bmv2] [T] [thread 33460] [33.0] [cxt 0] Bytes parsed: 14
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Parser 'parser': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Pipeline 'ingress': start
+[16:42:29.355] [bmv2] [T] [thread 33460] [33.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is false
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Pipeline 'ingress': end
+[16:42:29.355] [bmv2] [D] [thread 33460] [33.0] [cxt 0] Egress port is 0
+[16:42:29.355] [bmv2] [D] [thread 33461] [21.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [21.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [21.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [21.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [21.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [21.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [22.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [22.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [22.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [22.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [22.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [22.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [23.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [23.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [23.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [23.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [23.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [23.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [24.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [24.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [24.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [24.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [24.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [24.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [25.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [25.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [25.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [25.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [25.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [25.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [26.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [26.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [26.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [26.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [26.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [26.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [27.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [27.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [27.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [27.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [27.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [27.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [28.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [28.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [28.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [28.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [28.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [28.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [29.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [29.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [29.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [29.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [29.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [29.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [30.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [30.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [30.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [30.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [30.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [30.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [31.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [31.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [31.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [31.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [31.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [31.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [32.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [32.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [32.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.355] [bmv2] [T] [thread 33461] [32.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.355] [bmv2] [D] [thread 33461] [32.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.355] [bmv2] [D] [thread 33461] [32.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [33.0] [cxt 0] Pipeline 'egress': start
+[16:42:29.355] [bmv2] [D] [thread 33461] [33.0] [cxt 0] Pipeline 'egress': end
+[16:42:29.355] [bmv2] [D] [thread 33461] [33.0] [cxt 0] Deparser 'deparser': start
+[16:42:29.356] [bmv2] [T] [thread 33461] [33.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[16:42:29.356] [bmv2] [D] [thread 33461] [33.0] [cxt 0] Deparsing header 'ethernet'
+[16:42:29.356] [bmv2] [D] [thread 33461] [33.0] [cxt 0] Deparser 'deparser': end
+[16:42:29.356] [bmv2] [D] [thread 33465] [21.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [22.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [23.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [24.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [25.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [26.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [27.0] [cxt 0] Transmitting packet of size 209 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [28.0] [cxt 0] Transmitting packet of size 209 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [29.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [30.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [31.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [32.0] [cxt 0] Transmitting packet of size 221 out of port 0
+[16:42:29.356] [bmv2] [D] [thread 33465] [33.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[16:42:29.357] [bmv2] [D] [thread 33449] Set default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[16:42:29.361] [bmv2] [D] [thread 33453] Entry 0 added to table 'MyIngress.ipv4_lpm'
+[16:42:29.361] [bmv2] [D] [thread 33453] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:42:29.366] [bmv2] [D] [thread 33449] Entry 1 added to table 'MyIngress.ipv4_lpm'
+[16:42:29.366] [bmv2] [D] [thread 33449] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000200/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:42:29.368] [bmv2] [D] [thread 33449] Entry 2 added to table 'MyIngress.ipv4_lpm'
+[16:42:29.368] [bmv2] [D] [thread 33449] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:42:29.373] [bmv2] [D] [thread 33453] Entry 3 added to table 'MyIngress.ipv4_lpm'
+[16:42:29.373] [bmv2] [D] [thread 33453] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:42:29.382] [bmv2] [D] [thread 33449] Entry 4 added to table 'MyIngress.ipv4_lpm'
+[16:42:29.382] [bmv2] [D] [thread 33449] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Processing packet received on port 3
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Parser 'parser': start
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] Bytes parsed: 14
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] Bytes parsed: 34
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Parser 'parser': end
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.684] [bmv2] [T] [thread 33460] [34.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.684] [bmv2] [D] [thread 33460] [34.0] [cxt 0] Egress port is 1
+[16:43:04.684] [bmv2] [D] [thread 33462] [34.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.684] [bmv2] [D] [thread 33462] [34.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.684] [bmv2] [D] [thread 33462] [34.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.684] [bmv2] [D] [thread 33462] [34.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.684] [bmv2] [D] [thread 33462] [34.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.684] [bmv2] [D] [thread 33462] [34.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.684] [bmv2] [D] [thread 33462] [34.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.684] [bmv2] [D] [thread 33465] [34.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Processing packet received on port 1
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Parser 'parser': start
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] Bytes parsed: 14
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] Bytes parsed: 34
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Parser 'parser': end
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.684] [bmv2] [T] [thread 33460] [35.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.684] [bmv2] [D] [thread 33460] [35.0] [cxt 0] Egress port is 3
+[16:43:04.685] [bmv2] [D] [thread 33464] [35.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.685] [bmv2] [D] [thread 33464] [35.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.685] [bmv2] [D] [thread 33464] [35.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.685] [bmv2] [D] [thread 33464] [35.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.685] [bmv2] [D] [thread 33464] [35.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.685] [bmv2] [D] [thread 33464] [35.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.685] [bmv2] [D] [thread 33464] [35.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.685] [bmv2] [D] [thread 33465] [35.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Processing packet received on port 3
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Parser 'parser': start
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] Bytes parsed: 14
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] Bytes parsed: 34
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Parser 'parser': end
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.690] [bmv2] [T] [thread 33460] [36.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.690] [bmv2] [D] [thread 33460] [36.0] [cxt 0] Egress port is 2
+[16:43:04.690] [bmv2] [D] [thread 33463] [36.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.690] [bmv2] [D] [thread 33463] [36.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.690] [bmv2] [D] [thread 33463] [36.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.690] [bmv2] [D] [thread 33463] [36.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.690] [bmv2] [D] [thread 33463] [36.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.690] [bmv2] [D] [thread 33463] [36.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.690] [bmv2] [D] [thread 33463] [36.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.690] [bmv2] [D] [thread 33465] [36.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Processing packet received on port 2
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Parser 'parser': start
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] Bytes parsed: 14
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] Bytes parsed: 34
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Parser 'parser': end
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.691] [bmv2] [T] [thread 33460] [37.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.691] [bmv2] [D] [thread 33460] [37.0] [cxt 0] Egress port is 3
+[16:43:04.692] [bmv2] [D] [thread 33464] [37.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.692] [bmv2] [D] [thread 33464] [37.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.692] [bmv2] [D] [thread 33464] [37.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.692] [bmv2] [D] [thread 33464] [37.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.692] [bmv2] [D] [thread 33464] [37.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.692] [bmv2] [D] [thread 33464] [37.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.692] [bmv2] [D] [thread 33464] [37.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.692] [bmv2] [D] [thread 33465] [37.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:04.699] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Processing packet received on port 3
+[16:43:04.699] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Parser 'parser': start
+[16:43:04.699] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.699] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.699] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] Bytes parsed: 14
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] Bytes parsed: 34
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Parser 'parser': end
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001515
+
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.700] [bmv2] [T] [thread 33460] [38.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.700] [bmv2] [D] [thread 33460] [38.0] [cxt 0] Egress port is 4
+[16:43:04.700] [bmv2] [D] [thread 33461] [38.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.700] [bmv2] [D] [thread 33461] [38.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.700] [bmv2] [D] [thread 33461] [38.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.700] [bmv2] [D] [thread 33461] [38.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.700] [bmv2] [D] [thread 33461] [38.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.700] [bmv2] [D] [thread 33461] [38.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.700] [bmv2] [D] [thread 33461] [38.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.700] [bmv2] [D] [thread 33465] [38.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Processing packet received on port 4
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Parser 'parser': start
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] Bytes parsed: 14
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] Bytes parsed: 34
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Parser 'parser': end
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.703] [bmv2] [T] [thread 33460] [39.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.703] [bmv2] [D] [thread 33460] [39.0] [cxt 0] Egress port is 3
+[16:43:04.703] [bmv2] [D] [thread 33464] [39.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.703] [bmv2] [D] [thread 33464] [39.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.703] [bmv2] [D] [thread 33464] [39.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.703] [bmv2] [D] [thread 33464] [39.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.703] [bmv2] [D] [thread 33464] [39.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.703] [bmv2] [D] [thread 33464] [39.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.703] [bmv2] [D] [thread 33464] [39.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.703] [bmv2] [D] [thread 33465] [39.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Processing packet received on port 3
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Parser 'parser': start
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.711] [bmv2] [T] [thread 33460] [40.0] [cxt 0] Bytes parsed: 14
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.711] [bmv2] [T] [thread 33460] [40.0] [cxt 0] Bytes parsed: 34
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Parser 'parser': end
+[16:43:04.711] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.712] [bmv2] [T] [thread 33460] [40.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.712] [bmv2] [T] [thread 33460] [40.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.712] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001516
+
+[16:43:04.712] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:04.712] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:04.712] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:04.712] [bmv2] [T] [thread 33460] [40.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.712] [bmv2] [T] [thread 33460] [40.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.712] [bmv2] [T] [thread 33460] [40.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.712] [bmv2] [T] [thread 33460] [40.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.712] [bmv2] [T] [thread 33460] [40.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.712] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.712] [bmv2] [D] [thread 33460] [40.0] [cxt 0] Egress port is 4
+[16:43:04.712] [bmv2] [D] [thread 33461] [40.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.712] [bmv2] [D] [thread 33461] [40.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.712] [bmv2] [D] [thread 33461] [40.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.712] [bmv2] [D] [thread 33461] [40.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.712] [bmv2] [D] [thread 33461] [40.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.712] [bmv2] [D] [thread 33461] [40.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.712] [bmv2] [D] [thread 33461] [40.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.712] [bmv2] [D] [thread 33465] [40.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Processing packet received on port 4
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Parser 'parser': start
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] Bytes parsed: 14
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] Bytes parsed: 34
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Parser 'parser': end
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.717] [bmv2] [T] [thread 33460] [41.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.717] [bmv2] [D] [thread 33460] [41.0] [cxt 0] Egress port is 3
+[16:43:04.717] [bmv2] [D] [thread 33464] [41.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.717] [bmv2] [D] [thread 33464] [41.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.717] [bmv2] [D] [thread 33464] [41.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.717] [bmv2] [D] [thread 33464] [41.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.717] [bmv2] [D] [thread 33464] [41.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.717] [bmv2] [D] [thread 33464] [41.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.717] [bmv2] [D] [thread 33464] [41.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.717] [bmv2] [D] [thread 33465] [41.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Processing packet received on port 3
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Parser 'parser': start
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] Bytes parsed: 14
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] Bytes parsed: 34
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Parser 'parser': end
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.729] [bmv2] [T] [thread 33460] [42.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.729] [bmv2] [D] [thread 33460] [42.0] [cxt 0] Egress port is 1
+[16:43:04.729] [bmv2] [D] [thread 33462] [42.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.729] [bmv2] [D] [thread 33462] [42.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.729] [bmv2] [D] [thread 33462] [42.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.729] [bmv2] [D] [thread 33462] [42.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.729] [bmv2] [D] [thread 33462] [42.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.729] [bmv2] [D] [thread 33462] [42.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.729] [bmv2] [D] [thread 33462] [42.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.729] [bmv2] [D] [thread 33465] [42.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Processing packet received on port 1
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Parser 'parser': start
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] Bytes parsed: 14
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] Bytes parsed: 34
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Parser 'parser': end
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000202
+
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000200/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.729] [bmv2] [T] [thread 33460] [43.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.729] [bmv2] [D] [thread 33460] [43.0] [cxt 0] Egress port is 3
+[16:43:04.729] [bmv2] [D] [thread 33464] [43.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.729] [bmv2] [D] [thread 33464] [43.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.729] [bmv2] [D] [thread 33464] [43.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.729] [bmv2] [D] [thread 33464] [43.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.730] [bmv2] [D] [thread 33464] [43.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.730] [bmv2] [D] [thread 33464] [43.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.730] [bmv2] [D] [thread 33464] [43.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.730] [bmv2] [D] [thread 33465] [43.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:04.735] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Processing packet received on port 3
+[16:43:04.735] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Parser 'parser': start
+[16:43:04.735] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.735] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.735] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.735] [bmv2] [T] [thread 33460] [44.0] [cxt 0] Bytes parsed: 14
+[16:43:04.735] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.735] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] Bytes parsed: 34
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Parser 'parser': end
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.736] [bmv2] [T] [thread 33460] [44.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.736] [bmv2] [D] [thread 33460] [44.0] [cxt 0] Egress port is 2
+[16:43:04.736] [bmv2] [D] [thread 33463] [44.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.736] [bmv2] [D] [thread 33463] [44.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.736] [bmv2] [D] [thread 33463] [44.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.736] [bmv2] [D] [thread 33463] [44.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.736] [bmv2] [D] [thread 33463] [44.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.736] [bmv2] [D] [thread 33463] [44.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.736] [bmv2] [D] [thread 33463] [44.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.736] [bmv2] [D] [thread 33465] [44.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Processing packet received on port 2
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Parser 'parser': start
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Extracting header 'ethernet'
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] Bytes parsed: 14
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Extracting header 'ipv4'
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] Bytes parsed: 34
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Parser 'parser': end
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Pipeline 'ingress': start
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000202
+
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000200/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:04.736] [bmv2] [T] [thread 33460] [45.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Pipeline 'ingress': end
+[16:43:04.736] [bmv2] [D] [thread 33460] [45.0] [cxt 0] Egress port is 3
+[16:43:04.736] [bmv2] [D] [thread 33464] [45.0] [cxt 0] Pipeline 'egress': start
+[16:43:04.736] [bmv2] [D] [thread 33464] [45.0] [cxt 0] Pipeline 'egress': end
+[16:43:04.736] [bmv2] [D] [thread 33464] [45.0] [cxt 0] Deparser 'deparser': start
+[16:43:04.736] [bmv2] [D] [thread 33464] [45.0] [cxt 0] Updating checksum 'cksum'
+[16:43:04.736] [bmv2] [D] [thread 33464] [45.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:04.736] [bmv2] [D] [thread 33464] [45.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:04.736] [bmv2] [D] [thread 33464] [45.0] [cxt 0] Deparser 'deparser': end
+[16:43:04.736] [bmv2] [D] [thread 33465] [45.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Processing packet received on port 1
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Parser 'parser': start
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] Bytes parsed: 14
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] Bytes parsed: 34
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Parser 'parser': end
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.759] [bmv2] [T] [thread 33460] [46.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.759] [bmv2] [D] [thread 33460] [46.0] [cxt 0] Egress port is 3
+[16:43:24.759] [bmv2] [D] [thread 33464] [46.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.759] [bmv2] [D] [thread 33464] [46.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.759] [bmv2] [D] [thread 33464] [46.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.759] [bmv2] [D] [thread 33464] [46.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.759] [bmv2] [D] [thread 33464] [46.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.759] [bmv2] [D] [thread 33464] [46.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.759] [bmv2] [D] [thread 33464] [46.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.759] [bmv2] [D] [thread 33465] [46.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Processing packet received on port 3
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Parser 'parser': start
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] Bytes parsed: 14
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] Bytes parsed: 34
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Parser 'parser': end
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.760] [bmv2] [T] [thread 33460] [47.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.760] [bmv2] [D] [thread 33460] [47.0] [cxt 0] Egress port is 1
+[16:43:24.760] [bmv2] [D] [thread 33462] [47.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.760] [bmv2] [D] [thread 33462] [47.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.760] [bmv2] [D] [thread 33462] [47.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.760] [bmv2] [D] [thread 33462] [47.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.760] [bmv2] [D] [thread 33462] [47.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.760] [bmv2] [D] [thread 33462] [47.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.760] [bmv2] [D] [thread 33462] [47.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.760] [bmv2] [D] [thread 33465] [47.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Processing packet received on port 1
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Parser 'parser': start
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] Bytes parsed: 14
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] Bytes parsed: 34
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Parser 'parser': end
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000202
+
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000200/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.763] [bmv2] [T] [thread 33460] [48.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.763] [bmv2] [D] [thread 33460] [48.0] [cxt 0] Egress port is 3
+[16:43:24.763] [bmv2] [D] [thread 33464] [48.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.763] [bmv2] [D] [thread 33464] [48.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.763] [bmv2] [D] [thread 33464] [48.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.763] [bmv2] [D] [thread 33464] [48.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.763] [bmv2] [D] [thread 33464] [48.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.763] [bmv2] [D] [thread 33464] [48.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.763] [bmv2] [D] [thread 33464] [48.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.763] [bmv2] [D] [thread 33465] [48.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Processing packet received on port 3
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Parser 'parser': start
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] Bytes parsed: 14
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] Bytes parsed: 34
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Parser 'parser': end
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.765] [bmv2] [T] [thread 33460] [49.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.765] [bmv2] [D] [thread 33460] [49.0] [cxt 0] Egress port is 1
+[16:43:24.765] [bmv2] [D] [thread 33462] [49.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.765] [bmv2] [D] [thread 33462] [49.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.765] [bmv2] [D] [thread 33462] [49.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.765] [bmv2] [D] [thread 33462] [49.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.765] [bmv2] [D] [thread 33462] [49.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.765] [bmv2] [D] [thread 33462] [49.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.765] [bmv2] [D] [thread 33462] [49.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.765] [bmv2] [D] [thread 33465] [49.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Processing packet received on port 1
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Parser 'parser': start
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] Bytes parsed: 14
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] Bytes parsed: 34
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Parser 'parser': end
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.768] [bmv2] [T] [thread 33460] [50.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.768] [bmv2] [D] [thread 33460] [50.0] [cxt 0] Egress port is 2
+[16:43:24.769] [bmv2] [D] [thread 33463] [50.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.769] [bmv2] [D] [thread 33463] [50.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.769] [bmv2] [D] [thread 33463] [50.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.769] [bmv2] [D] [thread 33463] [50.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.769] [bmv2] [D] [thread 33463] [50.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.769] [bmv2] [D] [thread 33463] [50.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.769] [bmv2] [D] [thread 33463] [50.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.769] [bmv2] [D] [thread 33465] [50.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Processing packet received on port 2
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Parser 'parser': start
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] Bytes parsed: 14
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] Bytes parsed: 34
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Parser 'parser': end
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.769] [bmv2] [T] [thread 33460] [51.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.769] [bmv2] [D] [thread 33460] [51.0] [cxt 0] Egress port is 1
+[16:43:24.769] [bmv2] [D] [thread 33462] [51.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.769] [bmv2] [D] [thread 33462] [51.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.769] [bmv2] [D] [thread 33462] [51.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.769] [bmv2] [D] [thread 33462] [51.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.769] [bmv2] [D] [thread 33462] [51.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.769] [bmv2] [D] [thread 33462] [51.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.769] [bmv2] [D] [thread 33462] [51.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.769] [bmv2] [D] [thread 33465] [51.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Processing packet received on port 1
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Parser 'parser': start
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] Bytes parsed: 14
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] Bytes parsed: 34
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Parser 'parser': end
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001515
+
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.772] [bmv2] [T] [thread 33460] [52.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.772] [bmv2] [D] [thread 33460] [52.0] [cxt 0] Egress port is 4
+[16:43:24.772] [bmv2] [D] [thread 33461] [52.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.772] [bmv2] [D] [thread 33461] [52.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.772] [bmv2] [D] [thread 33461] [52.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.772] [bmv2] [D] [thread 33461] [52.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.772] [bmv2] [D] [thread 33461] [52.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.772] [bmv2] [D] [thread 33461] [52.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.772] [bmv2] [D] [thread 33461] [52.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.772] [bmv2] [D] [thread 33465] [52.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:24.774] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Processing packet received on port 4
+[16:43:24.774] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Parser 'parser': start
+[16:43:24.774] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.774] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.774] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.774] [bmv2] [T] [thread 33460] [53.0] [cxt 0] Bytes parsed: 14
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.775] [bmv2] [T] [thread 33460] [53.0] [cxt 0] Bytes parsed: 34
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Parser 'parser': end
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.775] [bmv2] [T] [thread 33460] [53.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.775] [bmv2] [T] [thread 33460] [53.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:24.775] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:24.775] [bmv2] [T] [thread 33460] [53.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.775] [bmv2] [T] [thread 33460] [53.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.775] [bmv2] [T] [thread 33460] [53.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.775] [bmv2] [T] [thread 33460] [53.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.776] [bmv2] [T] [thread 33460] [53.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.776] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.776] [bmv2] [D] [thread 33460] [53.0] [cxt 0] Egress port is 1
+[16:43:24.776] [bmv2] [D] [thread 33462] [53.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.776] [bmv2] [D] [thread 33462] [53.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.776] [bmv2] [D] [thread 33462] [53.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.776] [bmv2] [D] [thread 33462] [53.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.776] [bmv2] [D] [thread 33462] [53.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.776] [bmv2] [D] [thread 33462] [53.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.776] [bmv2] [D] [thread 33462] [53.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.777] [bmv2] [D] [thread 33465] [53.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:24.780] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Processing packet received on port 1
+[16:43:24.780] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Parser 'parser': start
+[16:43:24.780] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.780] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] Bytes parsed: 14
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] Bytes parsed: 34
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Parser 'parser': end
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001516
+
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.781] [bmv2] [T] [thread 33460] [54.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.781] [bmv2] [D] [thread 33460] [54.0] [cxt 0] Egress port is 4
+[16:43:24.782] [bmv2] [D] [thread 33461] [54.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.782] [bmv2] [D] [thread 33461] [54.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.782] [bmv2] [D] [thread 33461] [54.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.782] [bmv2] [D] [thread 33461] [54.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.782] [bmv2] [D] [thread 33461] [54.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.782] [bmv2] [D] [thread 33461] [54.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.782] [bmv2] [D] [thread 33461] [54.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.782] [bmv2] [D] [thread 33465] [54.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Processing packet received on port 4
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Parser 'parser': start
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] Bytes parsed: 14
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] Bytes parsed: 34
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Parser 'parser': end
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.785] [bmv2] [T] [thread 33460] [55.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.785] [bmv2] [D] [thread 33460] [55.0] [cxt 0] Egress port is 1
+[16:43:24.785] [bmv2] [D] [thread 33462] [55.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.785] [bmv2] [D] [thread 33462] [55.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.785] [bmv2] [D] [thread 33462] [55.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.785] [bmv2] [D] [thread 33462] [55.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.785] [bmv2] [D] [thread 33462] [55.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.785] [bmv2] [D] [thread 33462] [55.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.785] [bmv2] [D] [thread 33462] [55.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.786] [bmv2] [D] [thread 33465] [55.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Processing packet received on port 2
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Parser 'parser': start
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] Bytes parsed: 14
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] Bytes parsed: 34
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Parser 'parser': end
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.790] [bmv2] [T] [thread 33460] [56.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.790] [bmv2] [D] [thread 33460] [56.0] [cxt 0] Egress port is 3
+[16:43:24.790] [bmv2] [D] [thread 33464] [56.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.790] [bmv2] [D] [thread 33464] [56.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.790] [bmv2] [D] [thread 33464] [56.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.790] [bmv2] [D] [thread 33464] [56.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.790] [bmv2] [D] [thread 33464] [56.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.790] [bmv2] [D] [thread 33464] [56.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.790] [bmv2] [D] [thread 33464] [56.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.790] [bmv2] [D] [thread 33465] [56.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Processing packet received on port 3
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Parser 'parser': start
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] Bytes parsed: 14
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] Bytes parsed: 34
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Parser 'parser': end
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.793] [bmv2] [T] [thread 33460] [57.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.793] [bmv2] [D] [thread 33460] [57.0] [cxt 0] Egress port is 2
+[16:43:24.794] [bmv2] [D] [thread 33463] [57.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.794] [bmv2] [D] [thread 33463] [57.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.794] [bmv2] [D] [thread 33463] [57.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.794] [bmv2] [D] [thread 33463] [57.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.794] [bmv2] [D] [thread 33463] [57.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.794] [bmv2] [D] [thread 33463] [57.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.794] [bmv2] [D] [thread 33463] [57.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.794] [bmv2] [D] [thread 33465] [57.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Processing packet received on port 2
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Parser 'parser': start
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] Bytes parsed: 14
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] Bytes parsed: 34
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Parser 'parser': end
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000202
+
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000200/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.798] [bmv2] [T] [thread 33460] [58.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.798] [bmv2] [D] [thread 33460] [58.0] [cxt 0] Egress port is 3
+[16:43:24.798] [bmv2] [D] [thread 33464] [58.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.798] [bmv2] [D] [thread 33464] [58.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.798] [bmv2] [D] [thread 33464] [58.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.798] [bmv2] [D] [thread 33464] [58.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.799] [bmv2] [D] [thread 33464] [58.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.799] [bmv2] [D] [thread 33464] [58.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.799] [bmv2] [D] [thread 33464] [58.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.799] [bmv2] [D] [thread 33465] [58.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Processing packet received on port 3
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Parser 'parser': start
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] Bytes parsed: 14
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] Bytes parsed: 34
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Parser 'parser': end
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:24.802] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.802] [bmv2] [T] [thread 33460] [59.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.803] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.803] [bmv2] [D] [thread 33460] [59.0] [cxt 0] Egress port is 2
+[16:43:24.803] [bmv2] [D] [thread 33463] [59.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.803] [bmv2] [D] [thread 33463] [59.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.803] [bmv2] [D] [thread 33463] [59.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.803] [bmv2] [D] [thread 33463] [59.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.803] [bmv2] [D] [thread 33463] [59.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.803] [bmv2] [D] [thread 33463] [59.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.803] [bmv2] [D] [thread 33463] [59.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.803] [bmv2] [D] [thread 33465] [59.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Processing packet received on port 2
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Parser 'parser': start
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] Bytes parsed: 14
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] Bytes parsed: 34
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Parser 'parser': end
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.810] [bmv2] [T] [thread 33460] [60.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.810] [bmv2] [D] [thread 33460] [60.0] [cxt 0] Egress port is 1
+[16:43:24.811] [bmv2] [D] [thread 33462] [60.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.811] [bmv2] [D] [thread 33462] [60.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.811] [bmv2] [D] [thread 33462] [60.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.811] [bmv2] [D] [thread 33462] [60.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.811] [bmv2] [D] [thread 33462] [60.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.811] [bmv2] [D] [thread 33462] [60.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.811] [bmv2] [D] [thread 33462] [60.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.811] [bmv2] [D] [thread 33465] [60.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Processing packet received on port 1
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Parser 'parser': start
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] Bytes parsed: 14
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] Bytes parsed: 34
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Parser 'parser': end
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.811] [bmv2] [T] [thread 33460] [61.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.811] [bmv2] [D] [thread 33460] [61.0] [cxt 0] Egress port is 2
+[16:43:24.812] [bmv2] [D] [thread 33463] [61.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.812] [bmv2] [D] [thread 33463] [61.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.812] [bmv2] [D] [thread 33463] [61.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.812] [bmv2] [D] [thread 33463] [61.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.812] [bmv2] [D] [thread 33463] [61.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.812] [bmv2] [D] [thread 33463] [61.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.812] [bmv2] [D] [thread 33463] [61.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.812] [bmv2] [D] [thread 33465] [61.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:24.823] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Processing packet received on port 2
+[16:43:24.823] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Parser 'parser': start
+[16:43:24.823] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.823] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.823] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.823] [bmv2] [T] [thread 33460] [62.0] [cxt 0] Bytes parsed: 14
+[16:43:24.823] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.823] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] Bytes parsed: 34
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Parser 'parser': end
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001515
+
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.824] [bmv2] [T] [thread 33460] [62.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.824] [bmv2] [D] [thread 33460] [62.0] [cxt 0] Egress port is 4
+[16:43:24.825] [bmv2] [D] [thread 33461] [62.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.825] [bmv2] [D] [thread 33461] [62.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.825] [bmv2] [D] [thread 33461] [62.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.825] [bmv2] [D] [thread 33461] [62.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.825] [bmv2] [D] [thread 33461] [62.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.825] [bmv2] [D] [thread 33461] [62.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.825] [bmv2] [D] [thread 33461] [62.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.825] [bmv2] [D] [thread 33465] [62.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Processing packet received on port 4
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Parser 'parser': start
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] Bytes parsed: 14
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] Bytes parsed: 34
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Parser 'parser': end
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.829] [bmv2] [T] [thread 33460] [63.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.829] [bmv2] [D] [thread 33460] [63.0] [cxt 0] Egress port is 2
+[16:43:24.829] [bmv2] [D] [thread 33463] [63.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.829] [bmv2] [D] [thread 33463] [63.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.829] [bmv2] [D] [thread 33463] [63.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.829] [bmv2] [D] [thread 33463] [63.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.829] [bmv2] [D] [thread 33463] [63.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.829] [bmv2] [D] [thread 33463] [63.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.829] [bmv2] [D] [thread 33463] [63.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.829] [bmv2] [D] [thread 33465] [63.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:24.841] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Processing packet received on port 2
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Parser 'parser': start
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] Bytes parsed: 14
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] Bytes parsed: 34
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Parser 'parser': end
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001516
+
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.842] [bmv2] [T] [thread 33460] [64.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.842] [bmv2] [D] [thread 33460] [64.0] [cxt 0] Egress port is 4
+[16:43:24.842] [bmv2] [D] [thread 33461] [64.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.842] [bmv2] [D] [thread 33461] [64.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.842] [bmv2] [D] [thread 33461] [64.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.842] [bmv2] [D] [thread 33461] [64.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.842] [bmv2] [D] [thread 33461] [64.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.842] [bmv2] [D] [thread 33461] [64.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.842] [bmv2] [D] [thread 33461] [64.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.842] [bmv2] [D] [thread 33465] [64.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:24.846] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Processing packet received on port 4
+[16:43:24.846] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Parser 'parser': start
+[16:43:24.846] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.846] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] Bytes parsed: 14
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] Bytes parsed: 34
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Parser 'parser': end
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.847] [bmv2] [T] [thread 33460] [65.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.847] [bmv2] [D] [thread 33460] [65.0] [cxt 0] Egress port is 2
+[16:43:24.847] [bmv2] [D] [thread 33463] [65.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.847] [bmv2] [D] [thread 33463] [65.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.847] [bmv2] [D] [thread 33463] [65.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.847] [bmv2] [D] [thread 33463] [65.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.847] [bmv2] [D] [thread 33463] [65.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.848] [bmv2] [D] [thread 33463] [65.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.848] [bmv2] [D] [thread 33463] [65.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.848] [bmv2] [D] [thread 33465] [65.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Processing packet received on port 4
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Parser 'parser': start
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] Bytes parsed: 14
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] Bytes parsed: 34
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Parser 'parser': end
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.858] [bmv2] [T] [thread 33460] [66.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.858] [bmv2] [D] [thread 33460] [66.0] [cxt 0] Egress port is 3
+[16:43:24.859] [bmv2] [D] [thread 33464] [66.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.859] [bmv2] [D] [thread 33464] [66.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.859] [bmv2] [D] [thread 33464] [66.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.859] [bmv2] [D] [thread 33464] [66.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.859] [bmv2] [D] [thread 33464] [66.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.859] [bmv2] [D] [thread 33464] [66.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.859] [bmv2] [D] [thread 33464] [66.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.859] [bmv2] [D] [thread 33465] [66.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Processing packet received on port 3
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Parser 'parser': start
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Extracting header 'ethernet'
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] Bytes parsed: 14
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Extracting header 'ipv4'
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] Bytes parsed: 34
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Parser 'parser': end
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Pipeline 'ingress': start
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001515
+
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:24.871] [bmv2] [T] [thread 33460] [67.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Pipeline 'ingress': end
+[16:43:24.871] [bmv2] [D] [thread 33460] [67.0] [cxt 0] Egress port is 4
+[16:43:24.871] [bmv2] [D] [thread 33461] [67.0] [cxt 0] Pipeline 'egress': start
+[16:43:24.871] [bmv2] [D] [thread 33461] [67.0] [cxt 0] Pipeline 'egress': end
+[16:43:24.871] [bmv2] [D] [thread 33461] [67.0] [cxt 0] Deparser 'deparser': start
+[16:43:24.871] [bmv2] [D] [thread 33461] [67.0] [cxt 0] Updating checksum 'cksum'
+[16:43:24.871] [bmv2] [D] [thread 33461] [67.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:24.871] [bmv2] [D] [thread 33461] [67.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:24.871] [bmv2] [D] [thread 33461] [67.0] [cxt 0] Deparser 'deparser': end
+[16:43:24.873] [bmv2] [D] [thread 33465] [67.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Processing packet received on port 4
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Parser 'parser': start
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Extracting header 'ethernet'
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] Bytes parsed: 14
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Extracting header 'ipv4'
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] Bytes parsed: 34
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Parser 'parser': end
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Pipeline 'ingress': start
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:34.893] [bmv2] [T] [thread 33460] [68.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Pipeline 'ingress': end
+[16:43:34.893] [bmv2] [D] [thread 33460] [68.0] [cxt 0] Egress port is 1
+[16:43:34.893] [bmv2] [D] [thread 33462] [68.0] [cxt 0] Pipeline 'egress': start
+[16:43:34.893] [bmv2] [D] [thread 33462] [68.0] [cxt 0] Pipeline 'egress': end
+[16:43:34.893] [bmv2] [D] [thread 33462] [68.0] [cxt 0] Deparser 'deparser': start
+[16:43:34.893] [bmv2] [D] [thread 33462] [68.0] [cxt 0] Updating checksum 'cksum'
+[16:43:34.893] [bmv2] [D] [thread 33462] [68.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:34.893] [bmv2] [D] [thread 33462] [68.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:34.893] [bmv2] [D] [thread 33462] [68.0] [cxt 0] Deparser 'deparser': end
+[16:43:34.893] [bmv2] [D] [thread 33465] [68.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Processing packet received on port 1
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Parser 'parser': start
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Extracting header 'ethernet'
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] Bytes parsed: 14
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Extracting header 'ipv4'
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] Bytes parsed: 34
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Parser 'parser': end
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Pipeline 'ingress': start
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001515
+
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:34.894] [bmv2] [T] [thread 33460] [69.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Pipeline 'ingress': end
+[16:43:34.894] [bmv2] [D] [thread 33460] [69.0] [cxt 0] Egress port is 4
+[16:43:34.894] [bmv2] [D] [thread 33461] [69.0] [cxt 0] Pipeline 'egress': start
+[16:43:34.894] [bmv2] [D] [thread 33461] [69.0] [cxt 0] Pipeline 'egress': end
+[16:43:34.894] [bmv2] [D] [thread 33461] [69.0] [cxt 0] Deparser 'deparser': start
+[16:43:34.894] [bmv2] [D] [thread 33461] [69.0] [cxt 0] Updating checksum 'cksum'
+[16:43:34.894] [bmv2] [D] [thread 33461] [69.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:34.894] [bmv2] [D] [thread 33461] [69.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:34.894] [bmv2] [D] [thread 33461] [69.0] [cxt 0] Deparser 'deparser': end
+[16:43:34.894] [bmv2] [D] [thread 33465] [69.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Processing packet received on port 4
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Parser 'parser': start
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Extracting header 'ethernet'
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] Bytes parsed: 14
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Extracting header 'ipv4'
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] Bytes parsed: 34
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Parser 'parser': end
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Pipeline 'ingress': start
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:34.898] [bmv2] [T] [thread 33460] [70.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Pipeline 'ingress': end
+[16:43:34.898] [bmv2] [D] [thread 33460] [70.0] [cxt 0] Egress port is 2
+[16:43:34.898] [bmv2] [D] [thread 33463] [70.0] [cxt 0] Pipeline 'egress': start
+[16:43:34.898] [bmv2] [D] [thread 33463] [70.0] [cxt 0] Pipeline 'egress': end
+[16:43:34.898] [bmv2] [D] [thread 33463] [70.0] [cxt 0] Deparser 'deparser': start
+[16:43:34.898] [bmv2] [D] [thread 33463] [70.0] [cxt 0] Updating checksum 'cksum'
+[16:43:34.898] [bmv2] [D] [thread 33463] [70.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:34.898] [bmv2] [D] [thread 33463] [70.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:34.898] [bmv2] [D] [thread 33463] [70.0] [cxt 0] Deparser 'deparser': end
+[16:43:34.898] [bmv2] [D] [thread 33465] [70.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Processing packet received on port 2
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Parser 'parser': start
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Extracting header 'ethernet'
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] Bytes parsed: 14
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Extracting header 'ipv4'
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] Bytes parsed: 34
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Parser 'parser': end
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Pipeline 'ingress': start
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001515
+
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:34.898] [bmv2] [T] [thread 33460] [71.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Pipeline 'ingress': end
+[16:43:34.898] [bmv2] [D] [thread 33460] [71.0] [cxt 0] Egress port is 4
+[16:43:34.899] [bmv2] [D] [thread 33461] [71.0] [cxt 0] Pipeline 'egress': start
+[16:43:34.899] [bmv2] [D] [thread 33461] [71.0] [cxt 0] Pipeline 'egress': end
+[16:43:34.899] [bmv2] [D] [thread 33461] [71.0] [cxt 0] Deparser 'deparser': start
+[16:43:34.899] [bmv2] [D] [thread 33461] [71.0] [cxt 0] Updating checksum 'cksum'
+[16:43:34.899] [bmv2] [D] [thread 33461] [71.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:34.899] [bmv2] [D] [thread 33461] [71.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:34.899] [bmv2] [D] [thread 33461] [71.0] [cxt 0] Deparser 'deparser': end
+[16:43:34.899] [bmv2] [D] [thread 33465] [71.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Processing packet received on port 4
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Parser 'parser': start
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Extracting header 'ethernet'
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] Bytes parsed: 14
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Extracting header 'ipv4'
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] Bytes parsed: 34
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Parser 'parser': end
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Pipeline 'ingress': start
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000100/24
+Action entry: MyIngress.ipv4_forward - 10300,3,
+
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Action entry is MyIngress.ipv4_forward - 10300,3,
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:34.909] [bmv2] [T] [thread 33460] [72.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Pipeline 'ingress': end
+[16:43:34.909] [bmv2] [D] [thread 33460] [72.0] [cxt 0] Egress port is 3
+[16:43:34.910] [bmv2] [D] [thread 33464] [72.0] [cxt 0] Pipeline 'egress': start
+[16:43:34.910] [bmv2] [D] [thread 33464] [72.0] [cxt 0] Pipeline 'egress': end
+[16:43:34.910] [bmv2] [D] [thread 33464] [72.0] [cxt 0] Deparser 'deparser': start
+[16:43:34.910] [bmv2] [D] [thread 33464] [72.0] [cxt 0] Updating checksum 'cksum'
+[16:43:34.910] [bmv2] [D] [thread 33464] [72.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:34.910] [bmv2] [D] [thread 33464] [72.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:34.910] [bmv2] [D] [thread 33464] [72.0] [cxt 0] Deparser 'deparser': end
+[16:43:34.910] [bmv2] [D] [thread 33465] [72.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[16:43:34.915] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Processing packet received on port 3
+[16:43:34.915] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Parser 'parser': start
+[16:43:34.915] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:34.915] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Extracting header 'ethernet'
+[16:43:34.915] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:34.915] [bmv2] [T] [thread 33460] [73.0] [cxt 0] Bytes parsed: 14
+[16:43:34.915] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Extracting header 'ipv4'
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] Bytes parsed: 34
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Parser 'parser': end
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Pipeline 'ingress': start
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001516
+
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:34.916] [bmv2] [T] [thread 33460] [73.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Pipeline 'ingress': end
+[16:43:34.916] [bmv2] [D] [thread 33460] [73.0] [cxt 0] Egress port is 4
+[16:43:34.916] [bmv2] [D] [thread 33461] [73.0] [cxt 0] Pipeline 'egress': start
+[16:43:34.916] [bmv2] [D] [thread 33461] [73.0] [cxt 0] Pipeline 'egress': end
+[16:43:34.916] [bmv2] [D] [thread 33461] [73.0] [cxt 0] Deparser 'deparser': start
+[16:43:34.916] [bmv2] [D] [thread 33461] [73.0] [cxt 0] Updating checksum 'cksum'
+[16:43:34.916] [bmv2] [D] [thread 33461] [73.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:34.916] [bmv2] [D] [thread 33461] [73.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:34.916] [bmv2] [D] [thread 33461] [73.0] [cxt 0] Deparser 'deparser': end
+[16:43:34.916] [bmv2] [D] [thread 33465] [73.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Processing packet received on port 4
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Parser 'parser': start
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Extracting header 'ethernet'
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] Bytes parsed: 14
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Extracting header 'ipv4'
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] Bytes parsed: 34
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Parser 'parser': end
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Pipeline 'ingress': start
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000303
+
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000303/32
+Action entry: MyIngress.ipv4_forward - a000303,1,
+
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000303,1,
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:44.927] [bmv2] [T] [thread 33460] [74.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Pipeline 'ingress': end
+[16:43:44.927] [bmv2] [D] [thread 33460] [74.0] [cxt 0] Egress port is 1
+[16:43:44.927] [bmv2] [D] [thread 33462] [74.0] [cxt 0] Pipeline 'egress': start
+[16:43:44.927] [bmv2] [D] [thread 33462] [74.0] [cxt 0] Pipeline 'egress': end
+[16:43:44.927] [bmv2] [D] [thread 33462] [74.0] [cxt 0] Deparser 'deparser': start
+[16:43:44.927] [bmv2] [D] [thread 33462] [74.0] [cxt 0] Updating checksum 'cksum'
+[16:43:44.927] [bmv2] [D] [thread 33462] [74.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:44.927] [bmv2] [D] [thread 33462] [74.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:44.927] [bmv2] [D] [thread 33462] [74.0] [cxt 0] Deparser 'deparser': end
+[16:43:44.927] [bmv2] [D] [thread 33465] [74.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Processing packet received on port 1
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Parser 'parser': start
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Extracting header 'ethernet'
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] Bytes parsed: 14
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Extracting header 'ipv4'
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] Bytes parsed: 34
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Parser 'parser': end
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Pipeline 'ingress': start
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001516
+
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:44.927] [bmv2] [T] [thread 33460] [75.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Pipeline 'ingress': end
+[16:43:44.927] [bmv2] [D] [thread 33460] [75.0] [cxt 0] Egress port is 4
+[16:43:44.928] [bmv2] [D] [thread 33461] [75.0] [cxt 0] Pipeline 'egress': start
+[16:43:44.928] [bmv2] [D] [thread 33461] [75.0] [cxt 0] Pipeline 'egress': end
+[16:43:44.928] [bmv2] [D] [thread 33461] [75.0] [cxt 0] Deparser 'deparser': start
+[16:43:44.928] [bmv2] [D] [thread 33461] [75.0] [cxt 0] Updating checksum 'cksum'
+[16:43:44.928] [bmv2] [D] [thread 33461] [75.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:44.928] [bmv2] [D] [thread 33461] [75.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:44.928] [bmv2] [D] [thread 33461] [75.0] [cxt 0] Deparser 'deparser': end
+[16:43:44.928] [bmv2] [D] [thread 33465] [75.0] [cxt 0] Transmitting packet of size 98 out of port 4
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Processing packet received on port 4
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Parser 'parser': start
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Extracting header 'ethernet'
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] Bytes parsed: 14
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Extracting header 'ipv4'
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] Bytes parsed: 34
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Parser 'parser': end
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Pipeline 'ingress': start
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000304
+
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 3
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000304/32
+Action entry: MyIngress.ipv4_forward - a000304,2,
+
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000304,2,
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:44.931] [bmv2] [T] [thread 33460] [76.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Pipeline 'ingress': end
+[16:43:44.931] [bmv2] [D] [thread 33460] [76.0] [cxt 0] Egress port is 2
+[16:43:44.932] [bmv2] [D] [thread 33463] [76.0] [cxt 0] Pipeline 'egress': start
+[16:43:44.932] [bmv2] [D] [thread 33463] [76.0] [cxt 0] Pipeline 'egress': end
+[16:43:44.932] [bmv2] [D] [thread 33463] [76.0] [cxt 0] Deparser 'deparser': start
+[16:43:44.932] [bmv2] [D] [thread 33463] [76.0] [cxt 0] Updating checksum 'cksum'
+[16:43:44.932] [bmv2] [D] [thread 33463] [76.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:44.932] [bmv2] [D] [thread 33463] [76.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:44.932] [bmv2] [D] [thread 33463] [76.0] [cxt 0] Deparser 'deparser': end
+[16:43:44.932] [bmv2] [D] [thread 33465] [76.0] [cxt 0] Transmitting packet of size 98 out of port 2
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Processing packet received on port 2
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Parser 'parser': start
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Extracting header 'ethernet'
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Parser state 'start': key is 0800
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] Bytes parsed: 14
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Extracting header 'ipv4'
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] Bytes parsed: 34
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Parser 'parser': end
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Pipeline 'ingress': start
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] basico.p4(114) Condition "hdr.ipv4.isValid()" (node_2) is true
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a001516
+
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 4
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a001500/24
+Action entry: MyIngress.ipv4_forward - a210300,4,
+
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a210300,4,
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] Action MyIngress.ipv4_forward
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] basico.p4(94) Primitive standard_metadata.egress_spec = port
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] basico.p4(95) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] basico.p4(96) Primitive hdr.ethernet.dstAddr = dstAddr
+[16:43:44.933] [bmv2] [T] [thread 33460] [77.0] [cxt 0] basico.p4(97) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Pipeline 'ingress': end
+[16:43:44.933] [bmv2] [D] [thread 33460] [77.0] [cxt 0] Egress port is 4
+[16:43:44.933] [bmv2] [D] [thread 33461] [77.0] [cxt 0] Pipeline 'egress': start
+[16:43:44.933] [bmv2] [D] [thread 33461] [77.0] [cxt 0] Pipeline 'egress': end
+[16:43:44.933] [bmv2] [D] [thread 33461] [77.0] [cxt 0] Deparser 'deparser': start
+[16:43:44.933] [bmv2] [D] [thread 33461] [77.0] [cxt 0] Updating checksum 'cksum'
+[16:43:44.933] [bmv2] [D] [thread 33461] [77.0] [cxt 0] Deparsing header 'ethernet'
+[16:43:44.933] [bmv2] [D] [thread 33461] [77.0] [cxt 0] Deparsing header 'ipv4'
+[16:43:44.933] [bmv2] [D] [thread 33461] [77.0] [cxt 0] Deparser 'deparser': end
+[16:43:44.933] [bmv2] [D] [thread 33465] [77.0] [cxt 0] Transmitting packet of size 98 out of port 4

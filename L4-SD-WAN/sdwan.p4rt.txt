@@ -1,0 +1,144 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 35015162
+    name: "MyIngress.prio_tcp_dst"
+    alias: "prio_tcp_dst"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.tcp.dstPort"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27406535
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 64
+}
+tables {
+  preamble {
+    id: 42342188
+    name: "MyIngress.prio_tcp_src"
+    alias: "prio_tcp_src"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.tcp.srcPort"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27406535
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 64
+}
+tables {
+  preamble {
+    id: 37318791
+    name: "MyIngress.prio_udp_dst"
+    alias: "prio_udp_dst"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.udp.dstPort"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27406535
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 64
+}
+tables {
+  preamble {
+    id: 35477549
+    name: "MyIngress.prio_udp_src"
+    alias: "prio_udp_src"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.udp.srcPort"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27406535
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 64
+}
+tables {
+  preamble {
+    id: 44918510
+    name: "MyIngress.dmac"
+    alias: "dmac"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ethernet.dstAddr"
+    bitwidth: 48
+    match_type: EXACT
+  }
+  action_refs {
+    id: 29683729
+  }
+  action_refs {
+    id: 25652968
+  }
+  size: 1024
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 25652968
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 29683729
+    name: "MyIngress.forward"
+    alias: "forward"
+  }
+  params {
+    id: 1
+    name: "p"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 27406535
+    name: "MyIngress.prio_forward"
+    alias: "prio_forward"
+  }
+  params {
+    id: 1
+    name: "p"
+    bitwidth: 9
+  }
+}
+type_info {
+}

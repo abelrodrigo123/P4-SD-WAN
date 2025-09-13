@@ -1,0 +1,43 @@
+# Versión mas compacta con P4C
+
+FROM debian:11-slim
+
+# Configurar entorno no interactivo
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Instalar dependencias mínimas, tmux para iniciar bmv2 en un nuevo terminal. #libboost-all-dev thrift-compiler && \tcpdump
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl gnupg software-properties-common sudo iproute2 iputils-ping graphviz \
+    python3 python3-pip git nano lsof net-tools iperf netcat traceroute hping3 \
+    tmux  \
+    graphviz     
+    
+
+# Añadir repositorio y clave de P4lang para BMv2 y P4C (p4lang-p4c el compilar se creara un contenedor a parte)
+RUN echo 'deb http://download.opensuse.org/repositories/home:/p4lang/Debian_11/ /' | tee /etc/apt/sources.list.d/home_p4lang.list && \
+    curl -fsSL https://download.opensuse.org/repositories/home:p4lang/Debian_11/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_p4lang.gpg > /dev/null && \
+    apt-get update && apt-get install -y --no-install-recommends p4lang-bmv2 p4lang-p4c 
+    
+
+# Limpiar la caché de apt
+RUN rm -rf /var/lib/apt/lists/*
+# Instalar p4runtime-shell
+# RUN pip3 install grpcio==1.44.0 grpcio-tools p4runtime-shell
+
+# Configurar el directorio de trabajo
+WORKDIR /behavioral-model/targets/simple_switch_grpc
+
+# Copiar archivos necesarios para ejecutar el programa P4
+# COPY my_program.p4 /behavioral-model/targets/simple_switch_grpc/
+# RUN p4c --target bmv2 --arch v1model --p4runtime-files my_program.p4rt.txt my_program.p4
+
+# Copiar scripts
+COPY start_s1.sh /root/
+COPY start_s2.sh /root/
+RUN chmod +x /root/start_s1.sh /root/start_s2.sh 
+
+# Exponer puertos necesarios
+EXPOSE 9090 9559
+
+# Comando predeterminado
+CMD ["/bin/bash"]
